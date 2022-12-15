@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
+  background: $background-color;
+  color: $font-color;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  @include flex-container(column, wrap, space-between, stretch, 0);
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.container {
+  max-width: 1080px;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @media(max-width: 1080px) {
+    width: auto;
+  }
+}
+
+.container-inner {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.full-height {
+  min-height: 100vh;
+  &:last-child {
+    min-height: calc(100vh - 85.5px)
+  }
+}

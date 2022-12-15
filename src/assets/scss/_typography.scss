@@ -1,0 +1,76 @@
+p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  margin-bottom: 24px;
+
+  color: darken($font-color, 20%);
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $primary;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 27px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 18px;
+}
+
+.fw100 {
+  font-weight: 100;
+}
+.fw200 {
+  font-weight: 200;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw800 {
+  font-weight: 800;
+}
+.fw900 {
+  font-weight: 900;
+}
+
+.section-heading {
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 2px;
+  &:first-letter {
+    color: $secondary;
+  }
+}

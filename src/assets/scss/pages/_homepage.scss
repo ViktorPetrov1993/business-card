@@ -1,0 +1,35 @@
+.homepage {
+  .full-height {
+    @include flex-container(column, nowrap, center, stretch, 0);
+    width: 100%;
+  }
+}
+
+.hero {
+  &-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s ease;
+    &.visible {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  &-greeting {
+    color: $primary;
+    margin-bottom: 21px;
+    letter-spacing: 3px;
+  }
+  &-name, &-spec {
+    letter-spacing: 2px;
+  }
+  &-name {
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  &-spec {
+    font-weight: 200;
+    margin-bottom: 32px;
+  }
+}
+
